@@ -29,12 +29,12 @@ Alternatively, you may also install Laravel by issuing the Composer create-proje
 
 composer create-project --prefer-dist laravel/laravel blog
 
-You can access it via `http://localhost/youprojectname/public`. 
- configure in webservices
+You can access it via http://localhost/youprojectname/public. 
+ configure in webservices```
 
 Pretty URLs
-Apache
-Laravel includes a public/.htaccess file that is used to provide URLs without the index.php front controller in the path. Before serving Laravel with Apache, be sure to enable the  mod_rewrite module so the .htaccess file will be honored by the server.
+## Apache
+```Laravel includes a public/.htaccess file that is used to provide URLs without the index.php front controller in the path. Before serving Laravel with Apache, be sure to enable the  mod_rewrite module so the .htaccess file will be honored by the server.
 
 If the .htaccess file that ships with Laravel does not work with your Apache installation, try this alternative:
 
@@ -47,8 +47,11 @@ RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ index.php [L]
-Nginx
-If you are using Nginx, the following directive in your site configuration will direct all requests to the index.php front controller:
+}
+```
+
+## Nginx
+```If you are using Nginx, the following directive in your site configuration will direct all requests to the index.php front controller:
 
 location / {
     try_files $uri $uri/ /index.php?$query_string;
