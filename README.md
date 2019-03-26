@@ -22,18 +22,18 @@ Your LAMP  is now ready!! You can access it via `http://localhost`.
 
 
 
-##Use Laravel in docker
+## Use Laravel in docker
 
-Via Composer Create-Project
+```Via Composer Create-Project
 Alternatively, you may also install Laravel by issuing the Composer create-project command in your terminal:
 
 composer create-project --prefer-dist laravel/laravel blog
 
-You can access it via `http://localhost/youprojectname/public`.
+You can access it via `http://localhost/youprojectname/public`. ```
 
-##configure in webservices
+## configure in webservices
 
-Pretty URLs
+```Pretty URLs
 Apache
 Laravel includes a public/.htaccess file that is used to provide URLs without the index.php front controller in the path. Before serving Laravel with Apache, be sure to enable the  mod_rewrite module so the .htaccess file will be honored by the server.
 
@@ -54,4 +54,4 @@ If you are using Nginx, the following directive in your site configuration will 
 location / {
     try_files $uri $uri/ /index.php?$query_string;
 }
-
+```
