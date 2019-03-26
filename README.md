@@ -20,3 +20,16 @@ docker-compose up -d
 Your LAMP  is now ready!! You can access it via `http://localhost`.
 
 
+
+
+Use Laravel in docker
+
+Via Composer Create-Project
+Alternatively, you may also install Laravel by issuing the Composer create-project command in your terminal:
+
+composer create-project --prefer-dist laravel/laravel blog
+
+You can access it via `http://localhost/youprojectname/public`.
+
+
+
