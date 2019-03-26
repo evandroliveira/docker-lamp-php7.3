@@ -1,4 +1,8 @@
-FROM php:7.3
+#version 1.0
+#Suport eriktonon@gmail.com
+#Contato https://www.linkedin.com/in/erik-tonon-83817b145/
+FROM php:7.3-apache
+MAINTAINER Erik Tonon 
 RUN apt-get update && apt-get install -y \
    git \
    zlib1g-dev \
