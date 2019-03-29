@@ -5,6 +5,7 @@
 * Apache
 * MySQL
 * phpMyAdmin
+* Redis 
 
 ## Installation
 
