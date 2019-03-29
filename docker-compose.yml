@@ -11,6 +11,7 @@ services:
       - "443:443"
     links: 
       - mysql
+      - postgres
     volumes: 
       - ${DOCUMENT_ROOT-./www}:/var/www/html
       - ${PHP_INI-./config/php/php.ini}:/usr/local/etc/php/php.ini
@@ -47,3 +48,16 @@ services:
     image: redis:latest
     ports:
       - "6379:6379"
+
+  postgres:
+    container_name: ek-postgres
+    image: postgres:9.6.12
+    environment:
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=123456
+        - POSTGRES_DB=labs
+    volumes:
+       - ./data/postgres
+    ports:
+      - "5432:5432"
+   
