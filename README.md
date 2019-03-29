@@ -6,6 +6,8 @@
 * MySQL
 * phpMyAdmin
 * Redis 
+* Postgres
+* PgAdmin4
 
 ## Installation
 
