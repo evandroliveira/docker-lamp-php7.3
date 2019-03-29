@@ -2,12 +2,12 @@
 
 
 * PHP Version 7.3
-* Apache
-* MySQL
-* phpMyAdmin
-* Redis 
-* Postgres
-* PgAdmin4
+* Apache Version 2.4
+* MySQL version 5.7
+* phpMyAdmin Version latest
+* Redis Version latest
+* Postgres version 9.6.12
+* PgAdmin version 4
 
 ## Installation
 
