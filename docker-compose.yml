@@ -28,8 +28,8 @@ services:
       - ${MYSQL_LOG_DIR-./logs/mysql}:/var/log/mysql
     environment:
       MYSQL_ROOT_PASSWORD: 123456
-      MYSQL_DATABASE: laboratorio
-      MYSQL_USER: eksolutions
+      MYSQL_DATABASE: labs
+      MYSQL_USER: labs
       MYSQL_PASSWORD: 123456
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
