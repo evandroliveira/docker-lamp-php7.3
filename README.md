@@ -7,8 +7,6 @@
 * phpMyAdmin Version latest
 * Redis Version latest
 * Postgres version 9.6.12
-* PgAdmin version 4
-
 ## Installation
 
 Clone this repository on your local 
@@ -21,9 +19,6 @@ docker-compose up -d
 ```
 
 Your LAMP  is now ready!! You can access it via `http://localhost`.
-
-
-
 
 ## Use Laravel in docker
 
@@ -53,10 +48,18 @@ RewriteRule ^ index.php [L]
 }
 ```
 
-## Nginx
-```If you are using Nginx, the following directive in your site configuration will direct all requests to the index.php front controller:
 
-location / {
-    try_files $uri $uri/ /index.php?$query_string;
-}
+## Use Portainer from manager containers
+
+## in Mac or Linux
 ```
+docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v /home/youuser/dev/Portainer/data:/data portainer/portainer
+```
+## In Windows 
+```
+docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v C:\Portainer:/data  portainer/portainer
+```
+
+
+
+
