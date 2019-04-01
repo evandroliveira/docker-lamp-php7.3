@@ -6,7 +6,8 @@
 * MySQL version 5.7
 * phpMyAdmin Version latest
 * Redis Version latest
-* Postgres version 9.6.12
+* Postgres Version 9.6.12
+* Pgadmin4 Version latest
 ## Installation
 
 Clone this repository on your local 
