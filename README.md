@@ -14,7 +14,7 @@ Clone this repository on your local
  Run the `docker-compose up -d`.
 
 ```shell
-git clone https://github.com/sprintcube/docker-compose-lamp-php-7.3.git
+git clone https://github.com/eriktonon/docker-lamp-php7.3
 cd docker-compose-lamp-php-7.3/
 docker-compose up -d
 ```
